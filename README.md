@@ -1,1 +1,1 @@
-# terraform-ppc64le
+# golang-builder-ppc64le
