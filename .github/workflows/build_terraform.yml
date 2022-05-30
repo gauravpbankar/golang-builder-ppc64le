@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       
       - uses: uraimo/run-on-arch-action@v2.1.1
-        name: Install dependencies and build Terraform
+        name: Install dependencies and build goalng
         id: build
         with:
           arch: ppc64le
@@ -36,7 +36,7 @@ jobs:
             
             #Copy built binary file to artifacts directory
             cp $GOPATH/bin/terraform /artifacts/terraform-$TAG
-            
+            a
                       
       - name: Create Release
         id: create_release
