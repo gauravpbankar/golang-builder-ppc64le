@@ -36,7 +36,7 @@ jobs:
             #echo '::set-output name=RELEASE::'$TAG
             
             #Copy built binary file to artifacts directory
-            cp $HOME/go/bin /artifacts/go-$TAG
+            #cp $HOME/go/bin /artifacts/go-$TAG
             
                       
       - name: Create Release
