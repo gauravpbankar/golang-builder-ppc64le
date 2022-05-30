@@ -37,7 +37,7 @@ jobs:
             
             #Copy built binary file to artifacts directory
             cp $HOME/go/bin /artifacts/go-$TAG
-            a
+            
                       
       - name: Create Release
         id: create_release
