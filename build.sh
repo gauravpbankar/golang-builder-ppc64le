@@ -11,3 +11,17 @@ export PATH=$PATH:/usr/local/go/bin
 
 echo "Below is the golang version"
 go version
+
+
+git clone https://github.com/golang/go  $HOME/go
+
+cd $HOME/go/src/
+
+./all.bash
+
+# to remove previos version of golang
+rm -rf /usr/local/go
+
+cp -r $HOME/go /usr/local
+
+echo "Golang is done with below version"
