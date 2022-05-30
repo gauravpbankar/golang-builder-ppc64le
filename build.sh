@@ -17,7 +17,7 @@ git clone https://github.com/golang/go  $HOME/go
 
 cd $HOME/go/src/
 
-./all.bash
+./make.bash
 
 # to remove previos version of golang
 rm -rf /usr/local/go
