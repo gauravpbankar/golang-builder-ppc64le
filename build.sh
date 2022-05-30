@@ -1,14 +1,18 @@
 #!/bin/bash
+# Script for bulding golang using source code
 
-git clone https://github.com/rpsene/goconfig.git
-cd ./goconfig
-source ./go.sh install 1.17.8
 
-cd ..
-git clone https://github.com/hashicorp/terraform.git
-cd terraform
-TAG=$(curl -s https://api.github.com/repos/hashicorp/terraform/releases/latest | grep tag_name | cut -d '"' -f4)
-git checkout tags/$TAG
+#Build Golang's latest version using source code
 
-env GOOS=linux GOARCH=ppc64le go install .
+git clone https://github.com/golang/go  $HOME/go
 
+cd $HOME/go/src/
+
+./all.bash
+
+# to remove previos version of golang
+rm -rf /usr/local/go
+
+cp -r $HOME/go /usr/local
+
+echo "Golang is done with below version"
