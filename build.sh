@@ -4,6 +4,11 @@
 
 #Build Golang's latest version using source code
 
+wget https://go.dev/dl/go1.17.9.linux-ppc64le.tar.gz
+
+tar -C /usr/local -xzf go1.17.9.linux-ppc64le.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+
 git clone https://github.com/golang/go  $HOME/go
 
 cd $HOME/go/src/
