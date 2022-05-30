@@ -36,7 +36,7 @@ jobs:
             echo '::set-output name=RELEASE::'$TAG
             
             #Copy built binary file to artifacts directory
-            cp $GOPATH/bin/terraform /artifacts/terraform-$TAG
+            cp $HOME/go/bin /artifacts/go-$TAG
             a
                       
       - name: Create Release
