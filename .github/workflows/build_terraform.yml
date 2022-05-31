@@ -1,7 +1,8 @@
 name: Build Terraform on Power
 
 on:
-  workflow_call:
+ 
+ workflow_dispatch:
 
 jobs:
   build:
