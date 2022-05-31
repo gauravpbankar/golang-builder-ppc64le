@@ -29,4 +29,4 @@ echo "Golang is done with below version"
 
 go version
 
-TAG="$(./go version | grep -o go1.* | awk '{print $1}')"
+TAG="$(go version | grep -o go1.* | awk '{print $1}')"
