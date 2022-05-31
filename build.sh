@@ -25,4 +25,6 @@ rm -rf /usr/local/go
 cp -r $HOME/go /usr/local
 
 echo "Golang is done with below version"
-TAG=latest
+go version
+TAG="$(go version | grep -o go1.* | awk '{print $1}')"
+
