@@ -47,7 +47,7 @@ jobs:
           tag: ${{ steps.build.outputs.RELEASE }}
           token: ${{ secrets.GITHUB_TOKEN }}
           allowUpdates: true
-          artifacts: ./artifacts/terraform-${{ steps.build.outputs.RELEASE }}
+          artifacts: ./artifacts/go-${{ steps.build.outputs.RELEASE }}
           name: ${{ steps.build.outputs.RELEASE }}
           replacesArtifacts: true
           draft: false
